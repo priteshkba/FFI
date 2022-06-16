@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@android:color/transparent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/round_white">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:src="@drawable/iv_rocket"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_17sdp" />
+
+        <TextView
+            android:id="@+id/tvResend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivImage"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_17sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="@string/strAppUpdateAlert1"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tvPlayStore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_9sdp"
+            android:background="@drawable/round_blue"
+            android:paddingBottom="@dimen/_9sdp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/tvResend"
+            android:layout_marginTop="@dimen/_17sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="@string/strLaunchPlayStore"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_12sdp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

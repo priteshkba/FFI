@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/li_main_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_8sdp">
+
+    <CheckedTextView
+        android:id="@+id/tvSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_unselected_size"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_7sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingRight="@dimen/_7sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:text="S"
+        android:textAlignment="center"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/_11sdp" />
+
+    <LinearLayout
+        android:id="@+id/li_selected"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:background="@drawable/shape_color_corner"
+        android:visibility="gone">
+        <!--
+                 <FrameLayout
+                     android:id="@+id/fi_color"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:background="@color/color_light_blue" />-->
+    </LinearLayout>
+
+</FrameLayout>
+

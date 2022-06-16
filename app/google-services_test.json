@@ -1,0 +1,72 @@
+{
+  "project_info": {
+    "project_number": "368260291881",
+    "firebase_url": "https://fashion-floor-india.firebaseio.com",
+    "project_id": "fashion-floor-india",
+    "storage_bucket": "fashion-floor-india.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368260291881:android:e23b219efee3e30d0a2b38",
+        "android_client_info": {
+          "package_name": "com.ffi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368260291881-0qu8q6r4brmr142edpnmomi6p35u1r4n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ffi",
+            "certificate_hash": "739836dff0987f05e303f9ae0417103a4801519f"
+          }
+        },
+        {
+          "client_id": "368260291881-34thphbrdmruusnpql75fqp79iidt0nb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ffi",
+            "certificate_hash": "b3ca7f4210da3961b32d1c8f2e3b235e9cc77fe5"
+          }
+        },
+        {
+          "client_id": "368260291881-he6da9940scjaiem1o85kn6he5imv66j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ffi",
+            "certificate_hash": "319754626fdbe6ee8d60f6465ef0989a00a8b81d"
+          }
+        },
+        {
+          "client_id": "368260291881-o2i3lmr2s79ens6pgt94i7jrj9a5t18i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ffi",
+            "certificate_hash": "500cf266ef4c265ae75f890bc4ce2e8e40483ba8"
+          }
+        },
+        {
+          "client_id": "368260291881-9fmpsrlr6slqcb4lqbf6tta2cl1v9va9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdJkrQ5GY-_PTTUJzLhM07zwI5qP9-_VQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368260291881-9fmpsrlr6slqcb4lqbf6tta2cl1v9va9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

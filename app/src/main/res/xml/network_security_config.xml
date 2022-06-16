@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system"/>
+            <certificates src="@raw/ffi_cert_new"/>
+            <certificates src="@raw/ffi_live_cert"/>
+            <certificates src="@raw/ffi_cert"/>
+        </trust-anchors>
+    </base-config>
+
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">maps.google.com</domain>
+        <domain includeSubdomains="true">org.apache.http.legacy</domain>
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </domain-config>
+
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">https://ffistores.com/FFI_Media/category</domain>
+        <domain includeSubdomains="true">https://ffistores.com/FFI_Media</domain>
+        <domain includeSubdomains="true">https://ffistores.com/FFI_Media/</domain>
+        <domain includeSubdomains="true">https://ffistores.com/</domain>
+        <domain includeSubdomains="true">ffistores.com</domain>
+        <domain includeSubdomains="true">https://testupdates.com/FFIAPI/</domain>
+        <domain includeSubdomains="true">https://testupdates.com/</domain>
+        <domain includeSubdomains="true">103.209.147.70</domain>
+    </domain-config>
+
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">testupdates.com</domain>
+        <trust-anchors>
+            <certificates src="@raw/testupdates_com" />
+        </trust-anchors>
+    </domain-config>
+</network-security-config>

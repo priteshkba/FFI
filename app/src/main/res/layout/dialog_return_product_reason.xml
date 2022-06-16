@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_15sdp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/reason_of_return_product"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:padding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/bg_edt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Spinner
+        android:overlapAnchor="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerReason"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/_14sdp"
+        android:padding="@dimen/_5sdp"
+        android:layout_gravity="top"
+        android:gravity="top"
+        android:hint="@string/enter_reason_of_return_product"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:background="@drawable/bg_btn_notes"
+        android:id="@+id/edtOtherReason"/>
+
+    <TextView
+        android:id="@+id/tvAddReason"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:background="@drawable/bg_btn_blue_curve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Return Product"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/color_white"
+        android:gravity="center"/>
+
+</LinearLayout>

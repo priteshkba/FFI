@@ -1,0 +1,3 @@
+include ':longimagecamera-lib'
+rootProject.name='FFI'
+include ':app'

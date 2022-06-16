@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_260sdp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_share_dialog"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header_sharedialog"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/title_share_product"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:id="@+id/ivclose"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/ic_close_white"
+            android:tint="@color/color_white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llShareImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_space"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/dimen_space"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/rdimage"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:background="@drawable/custom_chckbox"
+            android:button="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/tvshareimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/title_share_image"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSaheVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_space"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/dimen_space"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <CheckBox
+            android:id="@+id/rdvideo"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:background="@drawable/custom_chckbox"
+            android:button="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/tvsharevideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/title_share_video"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_space"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/dimen_space"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/rdDesc"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:background="@drawable/custom_chckbox"
+            android:button="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/lbl_description"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_space"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/dimen_space"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/rdmargin"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:background="@drawable/custom_chckbox"
+            android:button="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/tvaddmargin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/lbl_add_margin"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/currency"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <EditText
+                        android:id="@+id/edt_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:minWidth="@dimen/_50sdp"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/colorPrimary" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/li_downloading"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/disable_btn_blue"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <ProgressBar
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/downloading_images"
+            android:textAlignment="center"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_13sdp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/btn_done"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/bg_btn_blue_curve"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_4sdp"
+        android:text="@string/btn_done"
+        android:textAlignment="center"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/_13sdp"
+        android:visibility="gone" />
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_10sdp">
+
+    <TextView
+        android:id="@+id/tvbanktransfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/poppins_regular"
+        android:padding="@dimen/_6sdp"
+        android:text="@string/msg_bank_transfer"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_horizontal"
+        android:paddingStart="@dimen/_30sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_30sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/lbl_gallery"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/_12sdp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/divder_color" />
+
+    <TextView
+        android:id="@+id/tvCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_horizontal"
+        android:paddingStart="@dimen/_30sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_30sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/lbl_camera"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/_12sdp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/divder_color" />
+
+    <TextView
+        android:id="@+id/tvCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_horizontal"
+        android:paddingStart="@dimen/_30sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_30sdp"
+        android:text="@string/lbl_cancel"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/_12sdp" />
+
+</LinearLayout>

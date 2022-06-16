@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000" />
+
+    <ImageView
+        android:id="@+id/notification_view_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignBottom="@+id/notification_view_circle_dialog"
+        android:layout_centerHorizontal="true"
+        android:padding="36dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <com.ffi.Utils.CBCircularProgressBar
+        android:id="@+id/notification_view_circle_dialog"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignStart="@+id/notification_view_icon"
+        android:layout_alignLeft="@+id/notification_view_icon"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="168dp" />
+
+    <TextView
+        android:id="@+id/txtLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/notification_view_icon"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Loading..."
+        android:textColor="#FAFAFA"
+        android:textSize="20sp" />
+
+</RelativeLayout>

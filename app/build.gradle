@@ -1,0 +1,132 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'realm-android'
+
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    android {
+        useLibrary 'org.apache.http.legacy'
+    }
+
+    signingConfigs {
+        signinconf {
+            storeFile file('ffi.jks')
+            storePassword 'ffi@1234'
+            keyAlias = 'ffi'
+            keyPassword 'ffi@1234'
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.ffi"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 46
+        versionName "1.0.39"
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.signinconf
+    }
+
+    buildTypes {
+        debug{
+            minifyEnabled false
+            shrinkResources false
+            multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            minifyEnabled false
+            multiDexEnabled true
+
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "https://repo.commonsware.com.s3.amazonaws.com"
+        }
+        maven {
+            url "https://jitpack.io"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.core:core:1.3.2'
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.3.3'
+    implementation 'androidx.navigation:navigation-ui:2.3.3'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.2.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.2.2'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:multidex:1.0.3'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'android.lib.verticalmarqueetextview:VerticalMarqueeTextView:1.0.2'
+    implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation 'com.squareup.retrofit2:converter-scalars:2.0.1'
+
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.google.android.material:material:1.2.0-alpha06'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+
+    implementation 'me.zhanghai.android.materialratingbar:library:1.4.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation 'pub.devrel:easypermissions:2.0.1'
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+    implementation 'com.mikhaellopez:circularimageview:4.2.0'
+    implementation 'com.google.firebase:firebase-crashlytics:17.3.1'
+    implementation 'com.google.firebase:firebase-messaging:21.0.1'
+    implementation 'com.google.firebase:firebase-core:18.0.2'
+    implementation 'com.google.firebase:firebase-analytics:18.0.2'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    kapt 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation "com.github.bumptech.glide:okhttp3-integration:4.9.0"
+    implementation 'com.github.MikeOrtiz:TouchImageView:1.4.1'
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+    implementation 'com.facebook.android:facebook-login:11.2.0'
+    implementation 'com.facebook.android:facebook-android-sdk:11.2.0'
+    implementation 'com.facebook.android:facebook-share:11.3.0'
+    implementation 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
+    implementation 'com.google.android.exoplayer:exoplayer:2.7.2'
+    implementation 'com.chaos.view:pinview:1.4.4'
+    implementation 'com.google.android.play:core:1.8.2'
+    implementation 'com.google.android.play:core-ktx:1.8.1'
+    implementation 'com.github.livechat:chat-window-android:v2.1.2'
+    implementation project(':longimagecamera-lib')
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+   // compileOnly 'io.realm:realm-android:0.87.5'
+   // annotationProcessor 'io.realm:realm-android:0.87.5'
+
+}

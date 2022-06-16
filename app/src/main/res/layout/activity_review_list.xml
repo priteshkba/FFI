@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/li_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".reviewlist.ReviewListActivity">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/lbl_reviews"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/_11sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end">
+
+                    <TextView
+                        android:id="@+id/tvTotalRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/_9sdp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <com.ffi.Utils.GradientTextView
+                        android:id="@+id/tvAvgRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_minus13sdp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="4.5"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_40sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_minus13sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/lbl_out_of_review"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/_10sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false"
+                                android:isIndicator="true"
+                                android:numStars="5"
+                                android:progress="100"
+                                android:stepSize="0.1"
+                                android:theme="@style/GreyRatingBarStyle" />
+
+                            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                                android:id="@+id/rcp1"
+                                android:layout_width="@dimen/_130sdp"
+                                android:layout_height="@dimen/_5sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                app:rcBackgroundColor="@color/color_light_grey"
+                                app:rcMax="100"
+                                app:rcProgress="80"
+                                app:rcProgressColor="@color/color_blue"
+                                app:rcRadius="@dimen/_15sdp"
+                                app:rcReverse="false" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false"
+                                android:isIndicator="true"
+                                android:numStars="4"
+                                android:progress="100"
+                                android:theme="@style/GreyRatingBarStyle" />
+
+                            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                                android:id="@+id/rcp2"
+                                android:layout_width="@dimen/_130sdp"
+                                android:layout_height="@dimen/_5sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                app:rcBackgroundColor="@color/color_light_grey"
+                                app:rcMax="100"
+                                app:rcProgress="50"
+                                app:rcProgressColor="@color/color_blue"
+                                app:rcRadius="@dimen/_15sdp"
+                                app:rcReverse="false" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false"
+                                android:isIndicator="true"
+                                android:numStars="3"
+                                android:progress="100"
+                                android:theme="@style/GreyRatingBarStyle" />
+
+                            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                                android:id="@+id/rcp3"
+                                android:layout_width="@dimen/_130sdp"
+                                android:layout_height="@dimen/_5sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                app:rcBackgroundColor="@color/color_light_grey"
+                                app:rcMax="100"
+                                app:rcProgress="10"
+                                app:rcProgressColor="@color/color_blue"
+                                app:rcRadius="@dimen/_15sdp"
+                                app:rcReverse="false" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false"
+                                android:isIndicator="true"
+                                android:numStars="2"
+                                android:progress="100"
+                                android:theme="@style/GreyRatingBarStyle" />
+
+                            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                                android:id="@+id/rcp4"
+                                android:layout_width="@dimen/_130sdp"
+                                android:layout_height="@dimen/_5sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                app:rcBackgroundColor="@color/color_light_grey"
+                                app:rcMax="100"
+                                app:rcProgress="30"
+                                app:rcProgressColor="@color/color_blue"
+                                app:rcRadius="@dimen/_15sdp"
+                                app:rcReverse="false" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false"
+                                android:isIndicator="true"
+                                android:numStars="1"
+                                android:progress="100"
+                                android:stepSize="0.1"
+                                android:theme="@style/GreyRatingBarStyle" />
+
+                            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                                android:id="@+id/rcp5"
+                                android:layout_width="@dimen/_130sdp"
+                                android:layout_height="@dimen/_5sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                app:rcBackgroundColor="@color/color_light_grey"
+                                app:rcMax="100"
+                                app:rcProgress="10"
+                                app:rcProgressColor="@color/color_blue"
+                                app:rcRadius="@dimen/_15sdp"
+                                app:rcReverse="false" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:focusable="false"
+                android:nestedScrollingEnabled="false"
+                tools:listitem="@layout/adapter_reviews" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

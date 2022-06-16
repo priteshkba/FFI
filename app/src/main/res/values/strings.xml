@@ -1,0 +1,314 @@
+<resources>
+    <string name="app_name">FFI</string>
+    <string name="lbl_fashion_floor_india">Fashion Floor India</string>
+    <string name="tag_line">Feel the Fabrics</string>
+
+    <string name="facebook_app_id">325867155323495</string>
+    <string name="fb_login_protocol_scheme">fb325867155323495</string>
+    <string name="facebook_client_token">82de420123629e036ff6efe5059e7eab</string>
+
+
+    <!--Signup Screen-->
+    <string name="lbl_continue_mob_no">Continue With Your Mobile Number</string>
+    <string name="lbl_instruction_otp">We will send you an</string>
+    <string name="otp_bold">One Time Password</string>
+    <string name="lbl_last_instruction">on this mobile number</string>
+    <string name="hnt_mob_no">Enter Mobile Number</string>
+    <string name="btn_next">Next</string>
+    <string name="lbl_privacy_policy"><u>Privacy Policy</u></string>
+    <string name="menu_privacy_policy">Privacy Policy</string>
+    <string name="lbl_terms"><u>Terms &amp; Conditions</u></string>
+    <string name="btn_google">Continue with google</string>
+    <string name="btn_facebook">Continue with Facebook</string>
+
+    <!--OTP Screen-->
+    <string name="lbl_otp">Enter OTP</string>
+    <string name="btn_continue">Continue</string>
+    <string name="lbl_skip"><u>SKIP</u></string>
+    <string name="lbl_resend_counter">RESEND OTP IN %s SECONDS</string>
+    <string name="lbl_resend">RESEND OTP</string>
+    <string name="strSupport">Support</string>
+    <string name="strLiveSupport">Live Support</string>
+
+
+    <!--Home Screen-->
+    <string name="title_category">Category</string>
+    <string name="lbl_search">Search</string>
+    <string name="btn_subscribe">Subscribe</string>
+    <string name="lbl_populer_categlog">Popular Catalogue</string>
+    <string name="lbl_populer_category">Popular Category</string>
+    <string name="lbl_top_50">Top 50 Items</string>
+    <string name="lbl_view_all">View All >></string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_collection">Catalogue</string>
+    <string name="menu_cart">Cart</string>
+    <string name="menu_account">Account</string>
+    <string name="my_account">My Account</string>
+    <string name="title_whsihlist">Wishlist</string>
+    <string name="title_shared_catalog">Shared Catalogs</string>
+    <string name="title_my_order">My Orders</string>
+    <string name="title_rating">Rating</string>
+    <string name="title_whatsapp_suport">Chat Support</string>
+
+    <string name="sub_total">Sub Total</string>
+    <string name="gst">GST</string>
+    <string name="shiping_charge">Shipping Charges</string>
+    <string name="total">Total</string>
+
+    <string name="currency">\u20B9</string>
+    <string name="amt1">\u20B9 5000</string>
+    <string name="amt2">\u20B9 10000</string>
+    <string name="amt3">\u20B9 20000</string>
+    <string name="plus">+</string>
+
+    <string name="btn_checkout">Checkout</string>
+
+    <string name="lbl_download">Download</string>
+    <string name="lbl_facebook">Facebook</string>
+    <string name="lbl_other">Other</string>
+    <string name="lbl_share_now">Share Now</string>
+    <string name="btn_done">Done</string>
+    <string name="lbl_next">NEXT</string>
+    <string name="lblClose">Close</string>
+
+    <string name="lbl_refine">Refine</string>
+    <string name="lbl_sort_by">Sort by</string>
+
+
+    <!--Product Details Screen-->
+    <string name="lbl_select_size">Select Size</string>
+    <string name="lbl_product_detail">Product details</string>
+    <string name="lbl_free_cod">Free shipping</string>
+    <string name="lbl_easy_return">No exchange/\nreturns</string>
+    <string name="lbl_dispatched">Dispatch in\n3 – 5 Days</string>
+    <string name="lbl_direct_delivery">Direct delivery\nto customer</string>
+    <string name="lbl_write_review">Rate Product</string>
+    <string name="lbl_return_product">Return Product</string>
+    <string name="lbl_reviews">Reviews</string>
+    <string name="lbl_out_of_review">Out of 05</string>
+    <string name="btn_add_cart">Add To Cart</string>
+    <string name="hnt_title">Title</string>
+    <string name="hnt_write_your_review">Write your Review</string>
+    <string name="title_review">Write Review</string>
+    <string name="title_address_list">Address List</string>
+    <string name="hnt_paste_addres">Paste address here..</string>
+    <string name="title_add_address">Add Address</string>
+    <string name="btn_save_address">Save and Next</string>
+    <string name="hnt_customer_name">Customer Name</string>
+    <string name="hnt_reseller_name">From Name</string>
+    <string name="lbl_reseller_name">From Name :</string>
+    <string name="hnt_reseller_contact">From Number</string>
+    <string name="lbl_reseller_contact">From Number :</string>
+    <string name="hnt_phone_number">Customer Phone Number</string>
+    <string name="hnt_phn_number">Phone Number</string>
+    <string name="hnt_flate_house_no">Flat/House No./Building</string>
+    <string name="hnt_street">Street/Colony</string>
+    <string name="hnt_landmark">Landmark</string>
+    <string name="menu_logout">Logout</string>
+    <string name="title_payment">Payment</string>
+
+
+    <!--Payment Screen-->
+    <string name="lbl_visa">Visa</string>
+    <string name="lbl_Wallet">Wallet</string>
+    <string name="lbl_Wallet_history">Wallet History</string>
+
+    <string name="lbl_add_new_payment_method">Add New Payment Method</string>
+    <string name="lbl_add_new_payment_screenshot">Add New Payment Screenshot</string>
+    <string name="hnt_cardholder_name">Cardholder Name</string>
+    <string name="hnt_card_no">Card Number</string>
+    <string name="hnt_month_year">Month/Year</string>
+    <string name="hnt_cvv">CVV</string>
+    <string name="btn_pay_now">Pay Now</string>
+    <string name="hnt_pin_code">Pincode</string>
+
+    <!--Erro Messages-->
+    <string name="err_enter_mob_no">Please enter mobile number</string>
+    <string name="err_mob_invalid">Mobile Number Is Invalid</string>
+    <string name="msg_common_error">Something went wrong.Please try again.</string>
+    <string name="err_correct_otp">Please enter correct OTP</string>
+    <string name="err_fname">Please enter first name</string>
+    <string name="err_lname">Please enter last name</string>
+    <string name="err_email">Please enter email address</string>
+    <string name="err_valid_email">Please enter valid email address</string>
+    <string name="err_incorrect_otp">OTP is incorrect. Please try again</string>
+    <string name="strAppUpdateAlert1">Application version which you are using has been depreciated. Please update the application version from the play store.</string>
+    <string name="strLaunchPlayStore">Go to Play Store</string>
+
+    <string name="lbl_or">OR</string>
+
+
+    <!--Signup Screen-->
+    <string name="lbl__first_name">First Name</string>
+    <string name="lbl_last_name">Last Name</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_mobile_no">Mobile Number</string>
+    <string name="msg_confirmation_exit">Are you sure, you want to exit from app?</string>
+    <string name="msg_confirmation_logout">Are you sure you want to Logout?</string>
+    <string name="msg_confirmation_delete">Are you sure you want to Delete?</string>
+    <string name="msg_confirmation_back_address">Are you sure you want to go back?</string>
+    <string name="msg_confirmation_wish">Are you sure you want to move to wishlist?</string>
+
+    <string name="msg_product_add_cart">Product added successfully</string>
+    <string name="msg_no_cart_items">Oops, Your cart is empty!</string>
+    <string name="msg_no_orders">Oops, You havn\'t start shopping yet</string>
+    <string name="msg_no_share">Oops, You havn\'t share anything yet</string>
+    <string name="msg_no_products">Oops, No Product availble</string>
+    <string name="msg_no_wish_items">Oops, No items saved to your wish list</string>
+    <string name="msg_product_remove_cart">Product has been removed  from cart</string>
+    <string name="lblcountry">Country</string>
+    <string name="lblstate">State</string>
+
+
+    <!--Order Listing Screens-->
+    <string name="lbl_customer_name">Customer Name:</string>
+    <string name="lbl_place_on">Order Date:</string>
+    <string name="lbl_total_qty">Total Qty:</string>
+    <string name="lbl_order_id">Order Id:</string>
+    <string name="lbl_status">Status:</string>
+    <string name="lbl_address">\Address \</string>
+
+    <!--Add Address Validation-->
+    <string name="err_cust_name">Please enter customer name</string>
+    <string name="err_reseller_name">Please enter reseller name</string>
+    <string name="err_phone_number">Please enter phone number</string>
+    <string name="err_flat">Please enter flat,house no. or building</string>
+    <string name="err_street">Please enter street or Colony</string>
+    <string name="err_landmark">Please enter landmark</string>
+    <string name="err_pincode">Please enter pincode</string>
+    <string name="err_city">Please enter city</string>
+    <string name="hnt_city">City</string>
+
+    <string name="msg_item_not_available">\"Item not available in \"</string>
+    <string name="title_share_image">Share Image</string>
+    <string name="title_share_imageVideo">Share Image and Video</string>
+    <string name="title_share_video">Share Video</string>
+    <string name="lbl_description">Description</string>
+    <string name="lbl_add_margin">Add Margin</string>
+    <string name="pckg_whtsapp">com.whatsapp</string>
+    <string name="pckg_whtsapp_business">com.whatsapp.w4b</string>
+
+    <string name="msg_imges_downloaded">Downloaded</string>
+    <string name="whatsapp_no_installed">WhatsApp is not install in your mobile.</string>
+    <string name="title_share_with">Share with</string>
+    <string name="err_enter_margin">Please enter margin</string>
+    <string name="title_share_content">Share Description Now?</string>
+
+
+    <string name="msg_desc_copeied">Description copied . You can paste it while sharing.</string>
+    <string name="lbl_delivered">Delivered</string>
+    <string name="lbl_gender">Gender</string>
+    <string name="title_profile">Profile</string>
+    <string name="lbl_cancel">Cancel</string>
+    <string name="lbl_camera">Camera</string>
+    <string name="lbl_gallery">Gallery</string>
+    <string name="lbl_select_your_address">Select Your Address</string>
+    <string name="title_share_product">Share Product</string>
+    <string name="msg_review_submit">Your review submitted successfully</string>
+    <string name="hnt_search_order_id">Search order</string>
+    <string name="msg_payment_success">Your payment has been done successfully</string>
+    <string name="msg_add_wish">Product is added in your wishlist</string>
+    <string name="msg_remove_wish">Product is removed from your wishlist</string>
+    <string name="msg_payment_cancel">You have cancelled your payment</string>
+    <string name="err_select_address">Please add address or paste address</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="msg_profile_updated">Profile update successfully</string>
+    <string name="msg_otp_sent">OTP sent to your mobile number</string>
+
+    <string name="err_no_internet">No internet connection. Make sure that Wi-Fi or mobile data is turned on,then try again</string>
+    <string name="msg_login_require">You need to login for this functionality.\nDo you want to login?</string>
+    <string name="title_home">@string/lbl_fashion_floor_india</string>
+    <string name="hnt_search_product">Search Product</string>
+
+    <string name="err_select_to_share">Please select image or description</string>
+    <string name="err_select_to_share2">Please select image or description or video</string>
+    <string name="err_select_to_share3">Please select video or description</string>
+
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+
+
+    <string name="btn_recommend">Recommended</string>
+    <string name="whts_new">What\'s New</string>
+    <string name="price_low_to_high">Price: Low to High</string>
+    <string name="price_high_to_low">Price: High to Low</string>
+    <string name="btn_apply">Apply</string>
+    <string name="title_filter">Filter</string>
+    <string name="err_profile_photo">Please select profile photo</string>
+    <string name="desc_copy_msg">@string/msg_desc_copeied</string>
+    <string name="lbl_membership_discount">Membership Discount</string>
+    <string name="use_wallet_balance">Use From FFI Credit</string>
+    <string name="menu_wallet">Add FFI Credit</string>
+    <string name="menu_my_wallet">My Wallet</string>
+    <string name="err_add_amount">Please Add Amount</string>
+    <string name="lbl_purchase_now">Purchase Now</string>
+    <string name="lbl_buy_now">Buy Now</string>
+    <string name="lbl_deactive">Expired</string>
+    <string name="lbl_renew_now">Renew</string>
+    <string name="lbl_extend">Extend</string>
+    <string name="lbl_renew_already">Extended</string>
+    <string name="btn_purchase">Purchased</string>
+    <string name="btn_not_availble">Not Available</string>
+    <string name="title_mebership_plan">Membership Plan</string>
+    <string name="lbl_stock_unalbl">Out of Stock</string>
+    <string name="menu_terms_condition"><![CDATA[Terms & Condition]]></string>
+    <string name="msg_bank_transfer">Attach payment screenshots</string>
+    <string name="err_img_dwing">Please wait while images are downloading....</string>
+    <string name="err_img_not_appearing">Images are not available....</string>
+    <string name="msg_review">You can give review after order is deliver to you</string>
+    <string name="msg_return_date">As per our return product policy you can not return product now</string>
+    <string name="msg_order_success">Your order is successfully placed</string>
+    <string name="err_valid_pincode">Please enter valid pincode</string>
+    <string name="err_valid_mob">Please enter 10 digit mobile number</string>
+    <string name="err_valid_mob2">Please enter from number</string>
+    <string name="err_valid_mob3">Please enter customer phone number</string>
+    <string name="review_given">Review already given.</string>
+    <string name="move_to_cart">MOVE TO CART</string>
+    <string name="reseller_name">Reseller Name : </string>
+
+    <string name="alert_varient">Please select </string>
+    <string name="no_review_found">No Review Found</string>
+    <string name="lbl_refund_policy">Refund Policy</string>
+    <string name="lbl_login">Login</string>
+
+    <string name="no_id_found">Order ID is not available</string>
+    <string name="lbl_contact_us">Contact Us</string>
+    <string name="menu_about_us">About Us</string>
+    <string name="downloading_images">Downloading</string>
+    <string name="hnt_resel_name">Reseller Name</string>
+    <string name="reseller_contact">Reseller Contact</string>
+    <string name="lblreseller_contact">Reseller Contact :</string>
+    <string name="outof_stock">Please remove item of Out of Stock.</string>
+    <string name="product_availability">"Product is not available in "</string>
+    <string name="review_title">Please enter title for review</string>
+    <string name="review_add">Please add review</string>
+    <string name="give_rating">Please give rating</string>
+
+    <string name="err_valid_name">Please enter valid name</string>
+    <string name="err_valid_name2">Please enter from name</string>
+    <string name="lbl_view"><u>View Details</u></string>
+    <string name="tracking_code">Tracking Code : </string>
+    <string name="tracking_url">Tracking Url :</string>
+    <string name="transactionId">Transaction Id : </string>
+    <string name="notes">Notes : </string>
+    <string name="notes_empyt">Notes : - </string>
+
+    <string name="str_blank"> - </string>
+    <string name="transaction_credit">Cr.</string>
+    <string name="transaction_debit">Dr.</string>
+    <string name="lbl_recent_searches">Recent searches</string>
+    <string name="lbl_clear_all">Clear all</string>
+    <string name="default_notification_channel_id">com.ffi.ANDROID</string>
+    <string name="str_debit">Debit</string>
+    <string name="type_notes_here">Type notes here</string>
+    <string name="str_already_renewd">You have already extend this membership.</string>
+    <string name="reason_of_return_product">Reason of return product</string>
+    <string name="enter_reason_of_return_product">Enter Reason of return product</string>
+    <string name="str_return_requested">Return Requested</string>
+    
+    <string name="FFIBussinessWhatappNumber">+916351774635</string>
+    <string name="whatappNotInstalled">Whatsapp is not installed</string>
+
+</resources>

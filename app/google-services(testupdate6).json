@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1058606290162",
+    "firebase_url": "https://ffi-demo-1589781782495.firebaseio.com",
+    "project_id": "ffi-demo-1589781782495",
+    "storage_bucket": "ffi-demo-1589781782495.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058606290162:android:f46e348e4979f9abc56c6b",
+        "android_client_info": {
+          "package_name": "com.ffi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058606290162-f4439lurkng8b9ubp021e3mh1vhf2dmu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcZsVeJJvslcc_qrbWVayJdjWEAurG90Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1058606290162-f4439lurkng8b9ubp021e3mh1vhf2dmu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

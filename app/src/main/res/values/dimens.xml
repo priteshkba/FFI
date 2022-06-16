@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="dimen_space">@dimen/_10sdp</dimen> <!--for all screen left right spacing-->
+    <dimen name="dimen_topbottom_space">@dimen/_10sdp
+    </dimen> <!--for all screen top bottom spacing-->
+
+    <dimen name="viewpager_next_item_visible">@dimen/_30sdp</dimen>
+    <dimen name="viewpager_current_item_horizontal_margin">0dp</dimen>
+</resources>

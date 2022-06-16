@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Notes"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_14sdp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_notes"
+        android:id="@+id/edAddNote"
+        android:hint="Type notes here"
+        android:textColorHint="@color/color_grey"
+        android:height="@dimen/_100sdp"
+        android:layout_gravity="top"
+        android:gravity="top"
+        android:padding="@dimen/_8sdp"/>
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/product_detail_img"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:id="@+id/ivNote"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"/>
+
+    <LinearLayout
+        android:layout_margin="@dimen/_20sdp"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvUploadImage"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:background="@drawable/bg_btn_blue_curve"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Image"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_12sdp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvAddNote"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:background="@drawable/bg_btn_blue_curve"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Notes"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_12sdp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+</LinearLayout>

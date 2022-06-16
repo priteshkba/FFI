@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_share_dialog"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp">
+
+        <LinearLayout
+            android:id="@+id/li_varient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnAddCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@drawable/bg_btn_blue_curve"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_18sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="@string/btn_add_cart"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@drawable/bg_btn_blue_curve"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:paddingStart="@dimen/_18sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_18sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="@string/lblClose"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_11sdp" />
+
+    </LinearLayout>
+
+</LinearLayout>

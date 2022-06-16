@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/li_main_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_8sdp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector1"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:clickable="true"
+        android:paddingLeft="@dimen/_7sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingRight="@dimen/_7sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        tools:text="S"
+        android:textAlignment="center"
+        android:textColor="@color/text_selector1"
+        android:textSize="@dimen/_11sdp" />
+
+    <ImageView
+        android:id="@+id/ivDivideLine"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:src="@drawable/divide_line2"
+        />
+
+    <FrameLayout
+        android:id="@+id/li_selected"
+        android:clickable="true"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@drawable/stroke_color"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/li_view_selected"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_color_corner" />
+
+        <ImageView
+            android:id="@+id/rl_view_selected"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/iv_check_24" />
+
+    </FrameLayout>
+
+</FrameLayout>
+

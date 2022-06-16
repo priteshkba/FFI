@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.wajahatkarim3.longimagecamera.LongImageCameraActivity">
+
+     <RelativeLayout
+          android:layout_above="@+id/recyclerViewImage"
+          android:id="@+id/main"
+          android:paddingBottom="10dp"
+          android:layout_weight="0.7"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:padding="8dp"
+          tools:context="com.wajahatkarim3.longimagecamera.LongImageCameraActivity">
+
+      <com.google.android.cameraview.CameraView
+        android:id="@+id/cameraView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+      <Button
+        android:id="@+id/btnSnap"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/capture_btn_drawable"
+        />
+
+
+      <Button
+          android:drawablePadding="-15dp"
+          android:textAlignment="center"
+          android:drawableTint="@android:color/black"
+          android:drawableStart="@drawable/ic_check"
+          android:text="0"
+          android:layout_alignParentRight="true"
+          android:id="@+id/btnDone"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_marginLeft="5dp"
+          android:layout_alignParentBottom="true"
+          android:src="@drawable/ic_check"
+          android:tint="@android:color/black"
+          android:textColor="@android:color/black"
+          android:background="@drawable/done_btn_drawable"
+          />
+
+       <ImageButton
+        android:id="@+id/btnFlashMode"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_flash_auto"
+        android:tint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:background="@drawable/done_btn_drawable"
+        />
+
+    <ImageView
+        android:id="@+id/imgRecent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:visibility="gone"
+        app:srcCompat="@android:color/holo_red_dark" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_alignParentBottom="true"
+        android:padding="3dp"
+        android:id="@+id/recyclerViewImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"/>
+</RelativeLayout>

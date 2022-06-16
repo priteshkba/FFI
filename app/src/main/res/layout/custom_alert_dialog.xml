@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_280sdp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_share_dialog"
+    android:padding="@dimen/_7sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cad_tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/cad_tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:padding="@dimen/_4sdp"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_13sdp" />
+
+        <!--   <View
+               android:layout_width="match_parent"
+               android:layout_height="2dp"
+               android:background="@color/colorWhite" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cad_btnOk"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_blue_curve"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/btn_ok"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_12sdp" />
+
+            <Button
+                android:id="@+id/cad_btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_blue_curve"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/btn_cancel"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
